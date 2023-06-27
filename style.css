@@ -63,9 +63,6 @@ header {
     line-height: 2rem;
 }
 
-#contact {
-    font-size: 1.5rem;
-}
 .underline {
     text-decoration: underline ;
     text-decoration-color: #0a7491;
@@ -138,7 +135,7 @@ footer {
     align-items: baseline;
 }
 
-#hook, a {
+a{
     font-size: 1.5rem;
     text-decoration: none;
 }
