@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
     color: var(--text-color) ;
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    box-sizing: border-box;
 }
 
 header {
@@ -79,7 +80,7 @@ header {
 }
 
 .skillset-dot {
-    height: 0.7rem;
+    height: 1rem;
     aspect-ratio: 1;
     background-color: var(--text-color);
     border: solid 0.3rem #0a7491;
@@ -100,21 +101,39 @@ header {
     aspect-ratio: 1;
 }
 
+.projects {
+    display: flex;
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    align-items: center;
+    transition: transform ease-in-out 1000ms;
+    overflow-x: hidden;
+}
+
+
 .project-wrapper {
     display: flex;
     margin: 8rem;
     gap: 3rem;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70%;
+    
 }
 
-.project-wrapper > img {
-    width: 60%;
+.project-wrapper  img {
+    width: 50%;
+    height: 100%;
     border-radius: 1%;
 }
 
 .project-description {
     font-family: 'Abril Fatface', cursive;
-    align-self: center;
+    align-self:flex-start;
     line-height: 2rem;
+    width: 30%;
 }
 
 .project-description > p {
@@ -126,13 +145,28 @@ header {
     font-size: 2rem;
 }
 
+#button-holder {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.button {
+    height: 2rem;
+    width: 3rem;
+    background-color: #0a7491;
+    border: none;
+    border-radius: 10%;
+}
+
 footer {
     font-family: 'Abril Fatface', cursive;
     text-align: center;
-    margin: 1rem 8rem;
+    margin: 4rem 8rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    
 }
 
 a{
