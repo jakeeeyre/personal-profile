@@ -11,6 +11,9 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
 header {
     background-color: var(--background-color) ;
     color: var(--text-color) ;
@@ -64,6 +67,9 @@ header {
     line-height: 2rem;
 }
 
+@media only screen and (max-width:1250px) {
+
+}
 .underline {
     text-decoration: underline ;
     text-decoration-color: #0a7491;
@@ -101,6 +107,10 @@ header {
     aspect-ratio: 1;
 }
 
+#track {
+    width: 100%;
+    overflow: hidden;
+}
 .projects {
     display: flex;
     width: 100%;
@@ -108,7 +118,6 @@ header {
     position: relative;
     align-items: center;
     transition: transform ease-in-out 1000ms;
-    overflow-x: hidden;
 }
 
 
@@ -153,11 +162,39 @@ header {
 .button {
     height: 2rem;
     width: 3rem;
-    background-color: #0a7491;
-    border: none;
     border-radius: 10%;
+    background-color: #053a48;
+    border: #0a7491 3px solid;
+    cursor: pointer;
+}
+.is-hidden {
+    visibility: hidden;
 }
 
+.button:hover {
+    background-color: #0a7491;
+    border: none;
+}
+
+.dot-holder {
+    display: flex;
+}
+.dot {
+    height: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #053a48;
+    border: 3px solid #0a7491;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #0a7491;
+}
+.current-slide-dot {
+    background-color: #0a7491;
+}
 footer {
     font-family: 'Abril Fatface', cursive;
     text-align: center;
@@ -167,6 +204,10 @@ footer {
     justify-content: space-between;
     align-items: baseline;
     
+}
+
+#hook {
+    font-size: 1.5rem;
 }
 
 a{

@@ -44,42 +44,50 @@
             <img src="images/wordpress-simple.svg">
         </div>
     </section>
-    <section class="projects">
-        <div class="project-wrapper current-slide">
-            <img src="images/tea cosy.png" alt="tea cosy screenshot">
+    <section id = "track">
+        <section class="projects">
+            <div class="project-wrapper current-slide">
+                <img src="images/tea cosy.png" alt="tea cosy screenshot">
+                <div class="project-description">        
+                <h2>Project: The Tea Cosy</h2>
+                <p>One of the earliest website attempts after learning how to use the flexbox system. It involved numerous do-overs as I figured out how all the pieces fit together but I got there in the end.</p>
+                <p>Skills: Flexbox</p>
+                </div> 
+            </div>
+            <div class="project-wrapper">
             <div class="project-description">        
-              <h2>Project: The Tea Cosy</h2>
-              <p>One of the earliest website attempts after learning how to use the flexbox system. It involved numerous do-overs as I figured out how all the pieces fit together but I got there in the end.</p>
-              <p>Skills: Flexbox</p>
-            </div> 
-        </div>
-        <div class="project-wrapper">
-           <div class="project-description">        
-             <h2>Project: Fotomatic</h2>
-             <p>When learning about different veiwport sizes such as mobile vs laptop I was tasked with creating a responsive website design using media queries to change certain elements of the page as the screen size was adjusted.</p>
-             <p>Skills: Responsive Design</p>
-            </div> 
-            <img src="images/Fotomatic.png" alt="fotomatic screenshot">
-        </div>
-        <div class="project-wrapper">
-            <img src="images/jakebooks.png" alt="jakebooks screenshot">
-            <div class="project-description">        
-              <h2>Project: JakeBooks</h2>
-              <p>Tasked with copying a design similar to a well known webpage I chose to go with AirBnB and thus the bookstore/cafe JakeBooks was created. Interactivity and animations was added using JavaScript and CSS </p>
-              <p>Skills: Animation & Interactivity</p>
-             </div> 
-        </div>
-        <div class="project-wrapper">
-            <div class="project-description">        
-              <h2>Project: Piano Player</h2>
-              <p>A practice task for JavaScript, allowing the user to play along to the notes of the music on the keys and change the lyrics to the next line once they have finished the previous one.</p>
-              <p>Skills: JavaScript </p>
-             </div>
-             <img src="images/pianoplayer.png" alt="piano player screenshot"> 
-        </div>   
+                <h2>Project: Fotomatic</h2>
+                <p>When learning about different veiwport sizes such as mobile vs laptop I was tasked with creating a responsive website design using media queries to change certain elements of the page as the screen size was adjusted.</p>
+                <p>Skills: Responsive Design</p>
+                </div> 
+                <img src="images/Fotomatic.png" alt="fotomatic screenshot">
+            </div>
+            <div class="project-wrapper">
+                <img src="images/jakebooks.png" alt="jakebooks screenshot">
+                <div class="project-description">        
+                <h2>Project: JakeBooks</h2>
+                <p>Tasked with copying a design similar to a well known webpage I chose to go with AirBnB and thus the bookstore/cafe JakeBooks was created. Interactivity and animations was added using JavaScript and CSS </p>
+                <p>Skills: Animation & Interactivity</p>
+                </div> 
+            </div>
+            <div class="project-wrapper">
+                <div class="project-description">        
+                <h2>Project: Piano Player</h2>
+                <p>A practice task for JavaScript, allowing the user to play along to the notes of the music on the keys and change the lyrics to the next line once they have finished the previous one.</p>
+                <p>Skills: JavaScript </p>
+                </div>
+                <img src="images/pianoplayer.png" alt="piano player screenshot"> 
+            </div>   
+        </section>
     </section>
     <div id="button-holder">
-        <button class="button button--left">Prev</button>
+        <button class="button button--left is-hidden">Prev</button>
+        <div class="dot-holder">
+            <button class="dot current-slide-dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+        </div>
         <button class="button button--right">Next</button>
     </div>
     
