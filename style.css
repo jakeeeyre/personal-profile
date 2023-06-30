@@ -318,4 +318,19 @@ a{
         left: 50%;
         transform: translate(-50%);
     }
+    .projects {
+        display: block;
+        margin-top: 5em;
+        margin-bottom: -10rem;
+        transition: transform ease-in-out 400ms;
+    }
+    .dot {
+        margin:0 0.5rem;
+    }
+    footer {
+        display: block;
+    }
+    footer > p {
+        margin-bottom: 0.5rem;
+    }
 }
